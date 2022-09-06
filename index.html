@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Score Project</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <!-- Home Team -->
+        <div class="score-component">
+          <p>HOME</p>
+          <div class="score-box">
+            <p id="home-score">0</p>
+          </div>
+          <div class="button-box">
+            <button onclick="home(1)">+1</button>
+            <button onclick="home(2)">+2</button>
+            <button onclick="home(3)">+3</button>
+          </div>
+        </div>
+        <!-- Away Team -->
+        <div class="score-component">
+          <p>AWAY</p>
+          <div class="score-box">
+            <p id="away-score">0</p>
+          </div>
+          <div class="button-box">
+            <button onclick="away(1)">+1</button>
+            <button onclick="away(2)">+2</button>
+            <button onclick="away(3)">+3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reset-btn-box">
+      <button onclick="resetScore()">RESET</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
